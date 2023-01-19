@@ -1,0 +1,9 @@
+npm install cheerio
+npm install --save cross-fetch
+npm install html-minifier -g
+npm install --save express
+(After running the code [which will take 12.5 minutes because some sites crash if called too quickly] for the first time,
+comment out the crawlHTML line in actual.js. Else, the same website will be crawled again, 750 more links will be added to the csv file, 
+and VSCode can't handle over 1000 lines in csv files)
+(The key is password)
+The code takes 12.5 minutes to crawl the 750 websites and store them in the csv file, and it takes another 12.5 minutes to score the 750 websites with each search.

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Web Search</title>
+    <script src="builder.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self';font-src 'self'; img-src 'self' data: https:; style-src 'self' ; script-src 'self'">
+  </head>
+  <body>
+    <h1>Web Search API!</h1>
+    <input type="text" id="keyWord" name="keyWord" placeholder="Enter a key word"><br><br>
+    <input type="number" id="count" name="count" placeholder="Enter a number of results"><br><br>
+    <input type="text" id="password" name="password" placeholder="Enter a password"><br><br>
+    <button id="submit-button"class="btn btn-primary">Submit</button>
+    <p id="Content" name="Content"></p>
+  </body>
+</html>
